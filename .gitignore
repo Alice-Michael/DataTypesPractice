@@ -1,0 +1,16 @@
+# Compiled sources #
+####################
+*.o
+
+# Patch Files #
+###############
+*.patch
+
+# Executable #
+##############
+toy
+
+# git files #
+#############
+.gitmessage
+.gitignore
