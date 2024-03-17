@@ -2,6 +2,7 @@
 #include "ArrayTests.h"
 #include "LinkedList.h"
 #include "StackAndQueue.h"
+#include "TreeAndGraph.h"
 
 void menu();
 int again();
@@ -12,6 +13,9 @@ int main()
   LinkedList ll;
   Stack stack;
   Queue q;
+  Tree tree;
+  Graph graph;
+  
   int choice = 1;
   char input;
 
@@ -38,7 +42,9 @@ int main()
       choice = again();
       break;
     case '4':
-      std::cout << "Not Supported yet. Please choose again: ";
+      tree.display();
+      graph.display();
+      choice = again();
       break;
     default:
       std::cout << "Not valid.\n"
