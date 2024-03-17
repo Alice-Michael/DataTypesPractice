@@ -1,6 +1,7 @@
 #include "types.h"
 #include "ArrayTests.h"
 #include "LinkedList.h"
+#include "StackAndQueue.h"
 
 void menu();
 int again();
@@ -9,6 +10,8 @@ int main()
 {
   ArrayTests arr;
   LinkedList ll;
+  Stack stack;
+  Queue q;
   int choice = 1;
   char input;
 
@@ -30,6 +33,10 @@ int main()
       choice = again();
       break;
     case '3':
+      stack.display();
+      q.display();
+      choice = again();
+      break;
     case '4':
       std::cout << "Not Supported yet. Please choose again: ";
       break;
